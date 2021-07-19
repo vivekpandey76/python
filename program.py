@@ -6,7 +6,7 @@ today = date.today().strftime("%d-%B-%Y")
 def pusher():
     os.system("git add .")
     os.system('git commit -m "Committed on : {today} "'.format(today=today))
-    os.system("git push origin main")
+    os.system("git push origin master")
 
 def append():
     file1 = open("myfile.txt", "a")
